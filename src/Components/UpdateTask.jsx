@@ -44,7 +44,7 @@ const UpdateTask = () => {
           Update your task here
         </h1>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="bg-white w-4/12 mx-auto">
+          <div className="bg-white w-full md:w-4/12mx-auto">
             <div className="p-5">
               <input
                 type="text"
