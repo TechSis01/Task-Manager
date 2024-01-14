@@ -1,15 +1,15 @@
-import Layout from "./layout";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
+import MainLayout from "./MainLayout";
 import toast, { Toaster } from 'react-hot-toast';
 
+// TOAST NOTIFICATION
 const notify = () => toast('Task updated');
+
 const UpdateTask = () => {
   const currentFormState = useSelector((state) => state.tasks.tasks);
-
   const form = useForm({
     defaultValues: {
       task: currentFormState.task,
@@ -37,7 +37,7 @@ const UpdateTask = () => {
     
   };
   return (
-    <Layout>
+    <MainLayout>
       <section>
         <Toaster />
         <h1 className="text-5xl text-center py-10 font-bold">
@@ -93,7 +93,7 @@ const UpdateTask = () => {
       <Link to="/home">
         <button className="bg-green-700 text-white p-3">Home</button>
       </Link>
-    </Layout>
+    </MainLayout>
   );
 };
 

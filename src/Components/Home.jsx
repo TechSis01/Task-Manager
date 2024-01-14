@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
 import { updateTasks } from "../GlobalRedux/task";
-import Layout from "./layout";
 import illustration from "../Images/illustration.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -9,11 +8,15 @@ import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import loader from "../Images/loader.gif";
+import MainLayout from "./MainLayout";
 
+// TOAST NOTIFICATION
 const notify = () => toast("Task deleted");
 const fetchTasks = () => {
   return axios.get(`https://65a28a8542ecd7d7f0a7cce0.mockapi.io/crud`);
 };
+
+
 const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -65,7 +68,7 @@ const Home = () => {
   }
 
   return (
-    <Layout>
+    <MainLayout>
       <div className="w-8/12 mx-auto mt-10">
         <Toaster />
         <p className="text-5xl font-semibold py-2">Welcome {currentUser}</p>
@@ -125,7 +128,7 @@ const Home = () => {
           )}
         </section>
       </div>
-    </Layout>
+    </MainLayout>
   );
 };
 
