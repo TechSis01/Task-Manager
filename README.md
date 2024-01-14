@@ -1,4 +1,9 @@
-# React + Vite
+# Tasky
+This is a minimal task manager, you can easily create tasks, update your tasks, and delete them at your convenience. 
+Before creating any task, you must be authenticated first.
+API used for this project: https://mockapi.io
+Technologies used for this project: React, Vite, Tailwind CSS, Firebase, Axios, Reduxtoolkit, React query, react-hot-toast.
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
