@@ -69,7 +69,7 @@ const Home = () => {
 
   return (
     <MainLayout>
-      <div className="w-8/12 mx-auto mt-10">
+      <div className="w-11/12 md:w-8/12 mx-auto mt-10">
         <Toaster />
         <p className="text-3xl md:text-5xl font-semibold py-2">Welcome {currentUser}</p>
         <p className="py-2">Click the button below to get started</p>
