@@ -44,7 +44,7 @@ const CreateTask = () => {
     <MainLayout>
       <section>
         <Toaster />
-        <h1 className="text-5xl text-center py-10 font-bold">
+        <h1 className="text-3xl md:text-5xl text-center py-10 font-bold">
           Create your task here
         </h1>
         <form onSubmit={handleSubmit(onSubmit)}>

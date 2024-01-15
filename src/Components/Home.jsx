@@ -71,7 +71,7 @@ const Home = () => {
     <MainLayout>
       <div className="w-8/12 mx-auto mt-10">
         <Toaster />
-        <p className="text-5xl font-semibold py-2">Welcome {currentUser}</p>
+        <p className="text-3xl md:text-5xl font-semibold py-2">Welcome {currentUser}</p>
         <p className="py-2">Click the button below to get started</p>
         <Link to="/create">
           <button className="bg-blue-700 hover:bg-blue-500 text-white p-3 w-full rounded-md">

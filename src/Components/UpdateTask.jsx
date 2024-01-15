@@ -40,7 +40,7 @@ const UpdateTask = () => {
     <MainLayout>
       <section>
         <Toaster />
-        <h1 className="text-5xl text-center py-10 font-bold">
+        <h1 className="text-3xl md:text-5xl text-center py-10 font-bold">
           Update your task here
         </h1>
         <form onSubmit={handleSubmit(onSubmit)}>

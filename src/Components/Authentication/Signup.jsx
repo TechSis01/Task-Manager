@@ -39,11 +39,11 @@ const Signup = () => {
   return (
     <section className="bg-blue-400 h-screen w-screen pt-10 bg-opacity-40">
       <Toaster />
-      <h1 className="text-5xl text-center py-10 font-bold">
+      <h1 className="text-2xl px-2 md:px-0 md:text-5xl text-center py-10 font-bold">
         Manage tasks with Tasky
       </h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="bg-white w-4/12 mx-auto">
+        <div className="bg-white w-11/12 md:w-4/12 mx-auto">
           <div className="p-5">
             <input
               type="text"
@@ -90,7 +90,7 @@ const Signup = () => {
               {accountState}
             </button>
             <Link to="/" className="text-blue-600 py-5 italic">
-              Already have an account,sign in{" "}
+              Already have an account? Sign in{" "}
             </Link>
           </div>
         </div>
