@@ -83,7 +83,7 @@ const Home = () => {
             <img
               src={illustration}
               alt="illustration"
-              className="w-8/12 mx-auto"
+              className="w-full md:w-8/12 mx-auto"
             ></img>
           ) : (
             data?.data?.map((tasks) => (
