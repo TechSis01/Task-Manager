@@ -3,8 +3,7 @@ This is a minimal task manager, you can easily create tasks, update your tasks, 
 Before creating any task, you must be authenticated first.
 API used for this project: https://mockapi.io
 Technologies used for this project: React, Vite, Tailwind CSS, Firebase, Axios, Reduxtoolkit, React query, react-hot-toast.
-Curious about what Tasky looks like on the web, well here you have it https://task-manager-abmm-2ikxvz7qn-techsis01.vercel.app/
-
+Curious about what Tasky looks like on the web, well here you have it https://task-manager-abmm.vercel.app/
 But if you want to checkout a more robust Task management application, kindly checkout this other version I built as well:  https://taskbuddy-mu.vercel.app/
 
 
